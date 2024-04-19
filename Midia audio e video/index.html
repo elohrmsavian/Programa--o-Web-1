@@ -8,7 +8,40 @@
 <body>
       <h1> Imagem Dinamica </h1>
     <p>Site para vários dispositivos diferentes</p>
-       
+    <picture>
+    <source media="(max-width:750px)" srcset="img/fotot-p.jpg"
+    type="image/jpg">
+    <img src="img/foto-g.jpg" alt="imagem flexível">
+</picture>
+
+<h1>criando área de clique em uma imagem com a teg &lt;MAP&gt;</h1>
+<img src="img/workplace.jpg" alt="mesa de trabalho"
+usemap="#workmap">
+<map name="workmap">
+     <area shape="rect" coords="35,45,273,248" href="computador.html" 
+     alt="computador">
+     <area shape="rect" coords="289,172,334,248" href="telefone.html" alt="telefone celular">
+     <area shape="circle" coords="337,303,45" href="coofee.html" 
+     alt="xicara de cafe">
+</map>
+
+<h1>reproduzir audio hospedado localmete</h1>
+<audio preload="metadata" autoplay controls loop>
+       <source src="audio/County Lines - Telecasted.mp3" type="audio/mpeg">
+
+       <p>infelizmente seu navegador nao consegue abrir audio</p>
+<a href="audio/County Lines - Telecasted.mp3">clique aqui para baixar o arquivo mp3</a>
+
+   </audio>    
     
+    <h1>inserindo videos hospedados localmente</h1>
+    <video width="560" poster="" controls autoplay loop>
+        <source src="video/meu-video.m4v" type="video/mp4">
+        <source src="video/meu-video.mp4" type="video/mp4">
+        <source src="video/meu-video.webm" type="video/webm">
+        <source src="video/meu-video.ogv" type="video/ogg">
+        <p>infelizmente seu navegador nao consegue reproduzir o video</p>
+
+        </video>
 </body>
 </html>
